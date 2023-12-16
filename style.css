@@ -70,18 +70,18 @@
     background-image: radial-gradient(at center right, #7590f341 17%, #4268f000 76%);
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-
+/* carousel slide */
 .carousel-container {
   overflow: hidden;
   width: 100%;
-  max-width: 600px; /* Adjust the max-width as needed */
+  max-width: 600px; 
   margin: 0 auto;
 }
 
 .carousel-inner {
   display: flex;
-  width: 100%; /* Three times the number of slides for a 3-slide carousel */
-  animation: carouselAnimation 10s infinite; /* Adjust the duration as needed */
+  width: 100%; 
+  animation: carouselAnimation 10s infinite; 
 }
 
 .slide {
