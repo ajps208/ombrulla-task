@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/39e199522c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Caveat&family=Nunito:wght@300;400&family=Oswald:wght@300&family=Playpen+Sans:wght@300&family=Sofia+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <div>
+      <div
+        class="md:h-screen"
+        style="background: linear-gradient(to bottom, #cfd9ff, #ffffff)"
+      >
+        <!-- navbar -->
+        <nav class="bg-invisible">
+          <div class="container mx-auto px-4 md:px-8">
+            <div
+              class="flex md:px-24 md:py-12 h-16 items-center justify-between"
+            >
+              <div class="flex items-center">
+                <a href="/">
+                  <img
+                    class="block h-10 px-3 md:h-8 w-auto"
+                    src="https://www.ombrulla.com/logo.svg"
+                    alt="Ombrulla"
+                  />
+                </a>
+              </div>
+              <div class="hidden md:flex items-center space-x-4">
+                <a href="/" class="font-bold text-primary hover:text-blue-500"
+                  >Home</a
+                >
+                <div class="group relative">
+                  <a href="#" class="font-bold text-black hover:text-blue-500">
+                    <span>Services <i class="fa-solid fa-angle-down"></i></span>
+                  </a>
+                  <div
+                    class="absolute text-base left-0 z-50 hidden pt-5 space-y-2 group-hover:block font-semibold transition duration-300 ease-in-out w-64 text-left"
+                  >
+                    <ul class="bg-white">
+                      <a class="block">
+                        <li
+                          class="border-b border-gray-300 px-4 py-2 font-semibold text-black hover:text-primary"
+                        >
+                          AI Visual Inspection
+                        </li>
+                      </a>
+                      <a class="block">
+                        <li
+                          class="border-b border-gray-300 px-4 py-2 font-semibold text-black hover:text-primary"
+                        >
+                          AI Infrastructure Inspection
+                        </li>
+                      </a>
+                      <a class="block">
+                        <li
+                          class="border-b border-gray-300 px-4 py-2 font-semibold text-black hover:text-primary"
+                        >
+                          AI People Tracking
+                        </li>
+                      </a>
+                      <a class="block">
+                        <li
+                          class="border-b border-gray-300 px-4 py-2 font-semibold text-black hover:text-primary"
+                        >
+                          AI Data Analytics
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="group relative">
+                  <a
+                    href="#"
+                    class="font-bold text-black hover:text-blue-500 flex items-center"
+                  >
+                    <span>Product <i class="fa-solid fa-angle-down"></i></span>
+                  </a>
+                  <div
+                    class="absolute text-base font-sans left-0 z-50 hidden pt-5 space-y-2 group-hover:block font-semibold transition ease-in-out w-72 text-left"
+                  >
+                    <ul class="bg-white">
+                      <a class="block">
+                        <li
+                          class="border-b border-gray-300 p-4 text-black hover:text-primary"
+                        >
+                          Asset Performance Management
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+                <a class="font-bold text-black hover:text-blue-500">About</a>
+                <a class="font-bold text-black hover:text-blue-500">Blog</a>
+                <a class="font-bold text-black hover:text-blue-500">Contact</a>
+              </div>
+              <div class="flex md:hidden">
+                <button
+                  class="inline-flex items-center justify-center rounded-md p-2 text-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  id="mobile-menu-button"
+                  type="button"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <i id="menu-icon" class="fas fa-bars block text-lg"></i>
+                </button>
+                <!-- mobile menu -->
+                <div
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="top-center"
+                  id="mobile-menu"
+                  class="fixed z-10 left-0 top-0 w-[70%] h-full bg-white hidden md:hidden"
+                >
+                  <div class="bg-gray-100 px-16 py-10">
+                    <img src="https://www.ombrulla.com/logo.svg" alt="" />
+                  </div>
+                  <div className="">
+                    <ul
+                      style="
+                        width: 100%;
+                        max-width: 360px;
+                        background-color: white;
+                      "
+                      aria-labelledby="nested-list-subheader"
+                    >
+                      <li class="px-4">
+                        <div class="pb-4 pt-3 ps-4 border-b-2">Home</div>
+                      </li>
+                      <li class="px-4">
+                        <div
+                          class="pb-4 pt-3 ps-4 flex justify-between border-b-2"
+                        >
+                          Services
+                          <span
+                            class="bg-blue-600 text-center w-8 h-8 rounded-circle text-lg text-white"
+                            >+</span
+                          >
+                        </div>
+                        <!-- <ul style="padding-left: 1rem;">
+                          <li class="pb-4 border-b-2">AI Visual Inspection</li>
+                          <li class="pb-4 border-b-2">AI Infrastructure Inspection</li>
+                          <li class="pb-4 border-b-2">AI People Tracking</li>
+                          <li class="pb-4 border-b-2">AI Data Analytics</li>
+                        </ul> -->
+                      </li>
+                      <li class="px-4">
+                        <div
+                          class="pb-4 pt-3 ps-4 flex justify-between border-b-2"
+                        >
+                          Products
+                          <span
+                            class="bg-blue-600 text-center w-8 h-8 rounded-circle text-lg text-white"
+                            >+</span
+                          >
+                        </div>
+                        <!-- <ul style="padding-left: 1rem;">
+                          <li class="pb-4 border-b-2">Asset Performance Management</li>
+                        </ul> -->
+                      </li>
+                      <li class="px-4">
+                        <div class="pb-4 pt-3 ps-4 border-b-2">Blog</div>
+                      </li>
+                      <li class="px-4">
+                        <div class="px-4 pt-3">Contact</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- first section -->
+        <div class="container mt-10 md:mt-1 px-4 md:px-8">
+          <div class="flex flex-col md:flex-row w-full">
+            <!-- first row -->
+            <div class="w-full">
+              <div class="w-9/12 md:mt-20 md:px-20">
+                <h1 style="line-height: 70px" class="text-6xl font-bold">
+                  Manual Inspection is<span
+                    class="text-6xl font-normal text-blue-500"
+                  >
+                    Slow & Error-Prone</span
+                  >
+                </h1>
+              </div>
+              <div class="mt-5 text-gray-500 md:px-20">
+                <p>
+                  AI-driven computer vision transforms manufacturing quality
+                  inspection, boosting precision and cost-efficiency while
+                  upholding product excellence.
+                </p>
+              </div>
+              <div class="mt-10 flex md:px-20">
+                <button class="w-36 h-12 bg-blue-600 rounded-full text-white">
+                  Schedule call
+                </button>
+                <div class="flex items-center">
+                  <button
+                    class="ml-5 w-12 h-12 aspect-w-1 aspect-h-1 bg-blue-600 rounded-full"
+                  >
+                    <i
+                      class="fa-solid fa-caret-down fa-rotate-270"
+                      style="color: #ffffff"
+                    ></i>
+                  </button>
+                  <span class="ms-5 text-lg hidden md:block">Watch Video</span>
+                </div>
+              </div>
+            </div>
+            <!-- second row -->
+            <div class="w-full">
+              <div class="flex justify-center align-center">
+                <div class="md:w-1/2">
+                  <div
+                    class="mt-10 border-2 md:absolute md:top-[50px] md:left-[800px] sliderShape border-blue-600 rounded-full overflow-hidden hidden md:block"
+                  ></div>
+                  <div
+                    class="anotherShape mt-10 border-2 md:absolute md:top-[50px] md:left-[1020px] border-white rounded-full overflow-hidden hidden md:block"
+                  ></div>
+                  <img
+                    src="https://www.ombrulla.com/_astro/ai-visual-inspection_banner_1.f3232628_ZyIKMH.webp"
+                    alt="Your Image"
+                    class="w-full h-auto md:absolute md:top-[100px] md:left-[870px]"
+                    style="
+                      mask: url('https://www.ombrulla.com/images/home/mask-banner.png')
+                        center / contain no-repeat;
+                      width: 450px;
+                      height: 450px;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Scond Section -->
+      <div class="w-full flex items-center justify-center">
+        <div
+          class="secongimg rounded-xl w-11/12 px-8 py-6 md:mx-20 md:px-32 md:py-32"
+        >
+          <div class="flex items-center">
+            <i class="fa-solid fa-square" style="color: #1968f0"></i>
+            <p class="ms-2">The Best AI Service Provider</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold mt-4">
+              Crafting Tomorrow's World with<span
+                class="text-blue-600 text-3xl font-normal"
+              >
+                AI Excellence</span
+              >
+            </h1>
+          </div>
+          <div style="font-size: 18px" class="text-gray-500">
+            The majority of customers lack data-driven insights and automation.
+            Using AI, Ombrulla assist clients in extracting data from diverse
+            sources such as photos, videos, and data lakes, which can assist
+            businesses in making data-driven insights and improving their bottom
+            line.
+          </div>
+          <div class="flex items-center">
+            <button
+              class="ml-5 mt-5 w-8 h-8 aspect-w-1 aspect-h-1 bg-blue-600 rounded-full"
+            >
+              <i
+                class="fa-solid fa-caret-down fa-rotate-270"
+                style="color: #ffffff"
+              ></i>
+            </button>
+            <span class="ms-5 text-md mt-5">Watch Corporate Video </span>
+          </div>
+        </div>
+      </div>
+      <!-- Third section -->
+      <div class="third w-full flex items-center justify-center md:mt-32">
+        <div class="md:flex rounded-xl w-11/12 px-8 py-6">
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <i class="fa-solid fa-square" style="color: #1968f0"></i>
+              <p class="ms-2"><b>AI INFRASTRUCTURE INSPECTION</b></p>
+            </div>
+            <div>
+              <h1 class="text-3xl font-bold mt-4">
+                Enhances Efficiency, Safety, and Cost-Effectiveness
+              </h1>
+            </div>
+            <div style="font-size: 18px" class="text-justify mt-5 md:text-xl">
+              <ul>
+                <li class="list-disc">
+                  <b>Cutting-Edge Solution:</b> Ombrulla leverages AI, drones,
+                  and IoT technologies to transform infrastructure inspection.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Real-Time Insights:</b> Real-time insights enhance
+                  inspection efficiency, safety, and reduce conventional
+                  challenges.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Longevity and Cost-Effectiveness:</b> Ombrulla ensures the
+                  longevity and safety of critical infrastructure while offering
+                  a cost-effective solution.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Responsive Maintenance: </b>Enhances infrastructure
+                  management, increasing reliability and responsiveness, and
+                  reducing risks.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 flex items-center">
+              <button
+                class="w-36 h-12 bg-blue-600 rounded-full text-white hover:bg-white hover:text-black hover:border-black border-2"
+              >
+                Schedule call
+              </button>
+              <p class="ms-2">
+                <b
+                  >Read more
+                  <sup
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="color: #1667f3"
+                    ></i></sup
+                ></b>
+              </p>
+            </div>
+          </div>
+          <!-- Third section image -->
+          <div class="hidden md:block px-14">
+            <img
+              class="rounded"
+              src="https://www.ombrulla.com/_astro/ai-infrastructure-inspection.c8f30cbf_ZEO7he.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- fourth section -->
+      <div class="w-full flex items-center justify-center md:mt-32">
+        <div class="md:flex rounded-xl w-11/12 px-8 py-6">
+          <!-- fourth section image -->
+          <div class="hidden md:block px-10 md:-ms-16">
+            <img
+              class="rounded"
+              src="https://www.ombrulla.com/_astro/ai-visual-inspection.7625d432_2nYhqo.webp"
+              alt=""
+            />
+          </div>
+          <!-- fourth section detailes -->
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <i class="fa-solid fa-square" style="color: #1968f0"></i>
+              <p class="ms-2"><b>AI VISUAL INSPECTION</b></p>
+            </div>
+            <div>
+              <h1 class="text-3xl font-bold mt-4">
+                Improving Quality with Greater Precision
+              </h1>
+            </div>
+            <div style="font-size: 18px" class="text-justify mt-5 md:text-xl">
+              <ul>
+                <li class="list-disc">
+                  <b>Automated Defect Detection:</b> Automated visual inspection
+                  uses computer vision and machine learning to identify defects
+                  autonomously.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Advanced Image Processing:</b> It captures and enhances
+                  digital images for relevant feature extraction.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Informed Decision-Making:</b>The system classifies defects,
+                  aiding manufacturers in quality control decisions.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Real-Time Quality Assurance: </b> Integration with
+                  manufacturing enables real-time quality control and reduces
+                  substandard product risks.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 flex items-center">
+              <button
+                class="w-36 h-12 bg-blue-600 rounded-full text-white hover:bg-white hover:text-black hover:border-black border-2"
+              >
+                Schedule call
+              </button>
+              <p class="ms-2">
+                <b
+                  >Read more
+                  <sup
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="color: #1667f3"
+                    ></i></sup
+                ></b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fifth section -->
+      <div class="third w-full flex items-center justify-center md:mt-32">
+        <div class="md:flex rounded-xl w-11/12 px-8 py-6">
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <i class="fa-solid fa-square" style="color: #1968f0"></i>
+              <p class="ms-2"><b>AI DATA ANALYTICS</b></p>
+            </div>
+            <div>
+              <h1 class="text-3xl font-bold mt-4">
+                Empowers Businesses to Make Insightful Decisions
+              </h1>
+            </div>
+            <div style="font-size: 18px" class="text-justify mt-5 md:text-xl">
+              <ul>
+                <li class="list-disc">
+                  <b> Actionable Insights:</b> AI data analysis enhances
+                  decisions, personalizes customer experiences and improve
+                  operations.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Increased Customer Loyalty:</b> AI predictive analytics for
+                  personalized recommendations & increased customer loyalty.
+                </li>
+                <li class="list-disc mt-2">
+                  <b> Quality Assurance:</b> AI analytics identifies and
+                  mitigates potential issues, ensuring the quality and
+                  reliability of products and services.
+                </li>
+                <li class="list-disc mt-2">
+                  <b>Efficiency and Responsiveness:</b> Customers benefit from
+                  increased efficiency, improved product quality, and more
+                  responsive interactions with businesses.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 flex items-center">
+              <button
+                class="w-36 h-12 bg-blue-600 rounded-full text-white hover:bg-white hover:text-black hover:border-black border-2"
+              >
+                Schedule call
+              </button>
+              <p class="ms-2">
+                <b
+                  >Read more
+                  <sup
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="color: #1667f3"
+                    ></i></sup
+                ></b>
+              </p>
+            </div>
+          </div>
+          <!-- fifth section image -->
+          <div class="hidden md:block px-14">
+            <img
+              class="rounded"
+              src="https://www.ombrulla.com/_astro/ai-data-analytics.ef51a904_1g36GR.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- sixth section -->
+      <div class="w-full flex items-center justify-center md:mt-32 bg-blue-600">
+        <div class="md:flex md:flex-row w-11/12 py-6">
+          <div class="flex flex-col mt-10 md:px-16 md:py-20 md:w-7/12">
+            <div>
+              <img
+                class="w-24 md:h-6 md:w-28"
+                src="https://www.ombrulla.com/_astro/petran-logo.99970d82_1t8FzR.webp"
+                alt=""
+              />
+              <h2
+                class="text-1xl md:text-base font-normal leading-8 tracking-tight text-white"
+              >
+                <span class="text-white font-bold">PE</span>rformance -
+                <span class="text-white font-bold">TR</span>acking -
+                <span class="text-white font-bold">AN</span>alytics
+                <h1 class="md:pt-6 md:text-4xl text-3xl w-10/12 text-white">
+                  AI & IoT Enabled Asset Performance Management
+                </h1>
+              </h2>
+              <p class="md:pt-3 mt-2 text-lg w-11/12 text-white">
+                Petran offers an Asset Performance Management (APM) system that
+                harnesses the power of artificial intelligence and the Internet
+                of Things (IoT) to empower data-driven decision-making and
+                enable proactive maintenance strategies.
+              </p>
+              <div class="mt-5 flex md:mx-10">
+                <button class="w-36 h-12 bg-white rounded-full text-blue-600">
+                  Schedule call
+                </button>
+                <div class="flex items-center">
+                  <button
+                    class="ml-5 w-12 h-12 aspect-w-1 aspect-h-1 bg-white rounded-full"
+                  >
+                    <i
+                      class="fa-solid fa-caret-down fa-rotate-270"
+                      style="color: #1d3efb"
+                    ></i>
+                  </button>
+                  <span class="ms-5 text-lg text-white">Watch Video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sixth section image -->
+          <div class="px-14 md:px-0 py-14 mt-10 md:w-5/12">
+            <img
+              class="rounded md:w-full md:h-full"
+              src="	https://www.ombrulla.com/_astro/asset-performance-management-software.82e2a11d_29kMe4.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- seventh section -->
+      <div class="w-full flex items-center justify-center md:mt-32">
+        <div class="md:flex rounded-xl w-11/12 px-8 py-6">
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <i class="fa-solid fa-square" style="color: #1968f0"></i>
+              <p class="ms-2"><b>PRODUCTS</b></p>
+            </div>
+
+            <h1 class="text-2xl mt-2 font-bold">Our HR Tools</h1>
+            <p class="mt-3 font-medium text-gray-500">
+              Our job grading and evaluation tool, combined with the
+              compensation management tool, is a highly effective SaaS-based
+              solution. It greatly assists HR consultants and managers in
+              carrying out their roles with efficiency and precision.
+            </p>
+          </div>
+
+          <div class="flex flex-col bg-slate-100 rounded-lg mt-10 px-8 py-8">
+            <div class="flex flex-col items-center">
+              <h2 class="text-2xl font-semibold">Job Grading and Evaluation</h2>
+              <p class="mt-3 font-medium text-gray-500">
+                Job evaluation assesses and ranks job roles in an organization
+                based on responsibilities and skills, often for compensation and
+                structuring purposes.
+              </p>
+              <img
+                class="w-44 mt-5"
+                src="	https://www.ombrulla.com/_astro/job-profiler.bfa7dd2f_Z10oyMd.webp"
+                alt=""
+              />
+              <p class="-ms-44 mt-4">
+                Free Trial
+                <sup
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    style="color: #1667f3"
+                  ></i
+                ></sup>
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:ms-10 bg-slate-100 rounded-lg mt-10 px-8 py-8"
+          >
+            <div class="flex flex-col items-center">
+              <h2 class="text-2xl font-semibold">Compensation Management</h2>
+              <p class="mt-3 font-medium text-gray-500">
+                Compensation management software automates salary planning,
+                budget management, and equity analysis, ensuring fair and
+                competitive pay practices.
+              </p>
+              <img
+                class="w-44 mt-5"
+                src="https://www.ombrulla.com/_astro/Comp360.5e1e772f_23KQc0.webp"
+                alt=""
+              />
+              <p class="-ms-32 mt-4">
+                Book For Demo
+
+                <sup
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    style="color: #1667f3"
+                  ></i
+                ></sup>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- eight section -->
+      <div class="w-full mt-10 flex flex-col items-center justify-center">
+        <h6>
+          <i style="color: blue" class="fa-solid fa-square fa-2xs me-3"></i>OUR
+          CUSTOMERS<i
+            style="color: blue"
+            class="fa-solid fa-square fa-2xs ms-3"
+          ></i>
+        </h6>
+        <h1 class="text-3xl font-bold mt-3">They Trust Us</h1>
+        <div class="flex mt-6">
+          <div class="flex">
+            <img
+              class="w-30 h-20 md:w-50"
+              src="https://www.ombrulla.com/azelit.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/dubai-festival-city.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/best-western.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/wild-leaf.webp"
+              alt=""
+            />
+          </div>
+          <div class="hidden md:block md:flex">
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/emirates.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://ombrulla.com/burger-king.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/damac.webp"
+              alt=""
+            />
+            <img
+              class="w-30 h-20 md:w-50 md:ms-10"
+              src="https://www.ombrulla.com/planet-fitness.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- nine section -->
+      <div
+        class="w-full flex flex-col px-10 py-10 text-white bg-blue-950 md:mt-32"
+      >
+        <div class="flex">
+          <i class="fa-solid fa-square" style="color: #1968f0"></i>
+          <p class="ms-2"><b>OUR TESTIMONIALS</b></p>
+        </div>
+
+        <h1 class="text-3xl mt-4 font-bold">What Customers Say About Us</h1>
+        <div class="flex mt-8 md:px-24">
+          <div class="carousel-container">
+            <div class="carousel-inner">
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the above structure for additional slides as needed -->
+            </div>
+          </div>
+          <div class="carousel-container hidden md:block">
+            <div class="carousel-inner">
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide bg-white text-gray-500">
+                <p class="px-4 py-3">
+                  <span class="text-4xl font-extrabold text-purple-800">"</span
+                  >Ombrulla's AI-based Employee and Visitor Tracking System has
+                  significantly enhanced our workplace operations, seamlessly
+                  integrating security and productivity. This implementation has
+                  made our organization more efficient and effective.
+                  <span class="text-4xl font-extrabold text-purple-800">"</span>
+                </p>
+                <div class="w-full bg-slate-200 flex py-2 px-2">
+                  <div
+                    class="w-20 h-20 flex item-center justify-center bg-white rounded-full"
+                  >
+                    <img
+                      class="mt-4 w-10 h-10 md:w-50"
+                      src="https://www.ombrulla.com/azelit.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col ms-2">
+                    <p>manoj</p>
+                    <p class="text-blue-400">
+                      Managing Director, Terranz Dubai, UAE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the above structure for additional slides as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- only visible in medium devices -->
+      <div class="hidden  md:w-full md:mt-10 md:flex md:flex-col md:items-center md:justify-center">
+        <h6>
+          <i style="color: blue" class="fa-solid fa-square fa-2xs me-3"></i>BRANDS WE WORK WITH<i
+            style="color: blue"
+            class="fa-solid fa-square fa-2xs ms-3"
+          ></i>
+        </h6>
+        <h1 class="text-3xl font-bold mt-3">Trusted by Thousands of Businesses</h1>
+         <div class="bg-slate-100 md:mx-28 my-14">
+         <div class="flex">
+           <img class="w-52 ms-24 me-24" src="https://www.ombrulla.com/_astro/unv.85d8fa6f_1oWCsP.webp" alt="">
+           <img class="w-52 ms-24 me-24 " src="https://www.ombrulla.com/_astro/dahua.d9dec1a0_1788pM.webp" alt="">
+           <img class="w-52 ms-24 me-24" src="https://www.ombrulla.com/_astro/nvidia.8ba96db4_Z1BLchq.webp" alt="">
+         </div>
+        <div class="flex">
+           <img class="w-52 ms-24 me-24" src="https://www.ombrulla.com/_astro/amazon.8aa611f6_Zkubpr.webp" alt="">
+           <img class="w-52 ms-24 me-24" src="https://www.ombrulla.com/_astro/hikvision.2a55c6c2_Z1UqjJV.webp" alt="">
+           <img class="w-52 ms-24 me-24" src="https://www.ombrulla.com/_astro/hikvision.2a55c6c2_Z1UqjJV.webp" alt="">
+        </div>
+         </div>
+      </div>
+      <!-- ten section -->
+      <div class="w-full mt-10 flex flex-col items-center justify-center">
+        <h6>
+          <i style="color: blue" class="fa-solid fa-square fa-2xs me-3"></i>BLOG
+          UPDATES<i
+            style="color: blue"
+            class="fa-solid fa-square fa-2xs ms-3"
+          ></i>
+        </h6>
+        <h1 class="text-3xl font-bold mt-3">To Read</h1>
+        <div class="mx-10 mt-5 border-t-2 md:flex md:flex-row">
+          <div class="mt-8" >
+            <img class="rounded-sm"
+              src="https://www.ombrulla.com/_astro/blog-1.311eedd5_wt4eW.webp"
+              alt=""
+            />
+            <p class="text-base md:text-xl font-bold text-gray-900">
+              Privacy and security with Artificial Intelligence
+            </p>
+            <p class="text-xs">
+              Privacy and security are significant concerns when it comes to AI.
+              AI systems often require access to large amounts of personal data,
+              which can be ...
+            </p>
+            <div class="flex mt-2">
+              <img class="w-10" src="https://www.ombrulla.com/_astro/zara-elizabeth.f546c493_wXvHD.webp" alt="">
+              <div class="flex flex-col ms-3">
+                <p>Zara Elizabeth</p>
+                <p> Mar 16, 2020
+                  ·
+                  6 min read</p>
+              </div>
+            </div>
+             
+          </div>
+          <div class="mt-8 md:ms-4">
+            <img class="rounded-sm"
+              src="https://www.ombrulla.com/_astro/blog-2.c3cc33af_ZkLCIU.webp"
+              alt=""
+            />
+            <p class="text-base md:text-xl font-bold text-gray-900">
+              The impact of AI on jobs and the workforce
+            </p>
+            <p class="text-xs">
+              Privacy and security are significant concerns when it comes to AI.
+              AI systems often require access to large amounts of personal data,
+              which can be ...
+            </p>
+            <div class="flex mt-2">
+              <img class="w-10" src="https://www.ombrulla.com/_astro/zara-elizabeth.f546c493_wXvHD.webp" alt="">
+              <div class="flex flex-col ms-3">
+                <p>Zara Elizabeth</p>
+                <p> Mar 16, 2020
+                  ·
+                  6 min read</p>
+              </div>
+            </div>
+             
+          </div>
+          <div class="mt-8 md:ms-4" >
+            <img class="rounded-sm"
+              src="https://www.ombrulla.com/_astro/blog-3.fee62469_Z3YRpV.webp"
+              alt=""
+            />
+            <p class="text-base md:text-xl font-bold text-gray-900">
+              Bias and fairness in Artificial Intelligence
+            </p>
+            <p class="text-xs">
+              Privacy and security are significant concerns when it comes to AI.
+              AI systems often require access to large amounts of personal data,
+              which can be ...
+            </p>
+            <div class="flex mt-2">
+              <img class="w-10" src="https://www.ombrulla.com/_astro/zara-elizabeth.f546c493_wXvHD.webp" alt="">
+              <div class="flex flex-col ms-3">
+                <p>Zara Elizabeth</p>
+                <p> Mar 16, 2020
+                  ·
+                  6 min read</p>
+              </div>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="mt-10 md:flex md:flex-row bg-blue-950 text-white px-12 py-10 md:px-28 md:py-16">
+        <div class="md:w-3/12">
+          <h1 class="text-2xl font-bold md:mt-10">About Us</h1>
+          <p class="text-gray-500 mt-3">Ombrulla is an AI-driven company specializing in extracting insights from diverse data sources, including photos, videos, and data lakes. Our tailored solutions help businesses make data-driven decisions and improve their bottom line through automation and AI-powered analysis.</p>
+          <div >
+            <ul class="flex flex-row mt-3">
+              <li ><i class="fa-brands fa-facebook"></i></li>
+              <li class="ms-5" ><i class="fa-brands fa-instagram"></i></li>
+              <li class="ms-5"><i class="fa-brands fa-twitter"></i></li>
+              <li class="ms-5"><i class="fa-brands fa-linkedin"></i></li>
+              <li class="ms-5"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+       
+        <div class="md:w-3/12 md:ms-7">
+          <h1 class="text-2xl font-bold mt-10">Our Solutions</h1>
+         
+          <div  >
+            <ul class="flex flex-col text-gray-500 ">
+              <li class="mt-5" >Asset Performance Management</li>
+              <li class="mt-5">Job Grading & Evaluation</li>
+              <li class="mt-5">Compensation Management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-3/12">
+          <h1 class="text-2xl font-bold mt-10">Our Services</h1>
+         
+          <div >
+            <ul class="flex flex-col text-gray-500 ">
+              <li class="mt-5" >AI Infrastructure Inspection</li>
+              <li class="mt-5">AI Visual Inspection</li>
+              <li class="mt-5">AI Data Analytics</li>
+              <li class="mt-5">AI People Tracking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-3/12">
+          <h1 class="text-2xl font-bold mt-10">Reach Us</h1>
+         
+          <div >
+            <ul class="flex flex-col text-gray-500 ">
+              <li class="mt-5" >United Kingdom, 53 Denton close
+
+                Redhill, Surrey, RH1 5LB
+                
+                +44 787 999 3892</li>
+              <li class="mt-5">Germany, Schützenstraße 51A
+
+                Lübeck, 23558
+                
+                +49 179 512 5812
+                
+                </li>
+              <li class="mt-5">India, No. 154/20, Royal Space
+
+                Third Floor TI, HSR Layout,
+                
+                Bangalore, Karnataka
+                
+                560102
+                
+                +91 85900 56435
+                
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+          AOS.init();
+
+          // Toggle menu icon between bars and X
+          const menuIcon = document.getElementById("menu-icon");
+          menuIcon.classList.toggle("fa-bars");
+          menuIcon.classList.toggle("fa-times");
+        });
+      });
+    </script>
+  </body>
+</html>
